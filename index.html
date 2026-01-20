@@ -13,244 +13,248 @@ body {
   color: #1f2937;
 }
 
-.container {
+.section {
   max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 .hero {
-  background: #0a3cff;
+  background: #0b3c5d;
   color: white;
   text-align: center;
-  padding: 50px 25px;
-  border-radius: 12px;
+  padding: 70px 25px;
+}
+
+.hero img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 12px;
 }
 
 .hero h1 {
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  max-width: 760px;
+  margin: 0 auto 20px;
+  line-height: 1.25;
 }
 
 .hero p {
-  font-size: 17px;
+  font-size: 18px;
+  max-width: 720px;
+  margin: 0 auto 30px;
+  line-height: 1.5;
 }
 
-.cta {
-  background: white;
-  color: #0a3cff;
-  padding: 14px 28px;
+.cta-btn {
   display: inline-block;
-  margin-top: 20px;
+  background: #f4c430;
+  color: #000;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
+  border-radius: 10px;
 }
 
-.video-box {
-  margin: 50px 0;
-  text-align: center;
+.video-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
 }
 
 .benefits {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 50px;
+  border-radius: 14px;
+  padding: 40px;
+}
+
+.benefits h2 {
+  margin-top: 0;
+}
+
+.benefits ul {
+  padding-left: 20px;
 }
 
 form {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
+  border-radius: 14px;
+  padding: 40px;
+}
+
+label {
+  font-weight: bold;
 }
 
 select, input {
   width: 100%;
   padding: 12px;
-  margin-bottom: 20px;
+  margin: 10px 0 22px;
 }
 
 button {
   width: 100%;
-  background: #0a3cff;
+  background: #0b3c5d;
   color: white;
-  padding: 15px;
+  padding: 16px;
   border: none;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .footer {
   font-size: 12px;
   color: #666;
   text-align: center;
-  margin-top: 40px;
+  padding: 30px 20px;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="hero" style="text-align:center; padding:60px 25px; background:#0b3c5d; color:white;">
-
-  <!-- Brand Name -->
-  <p style="font-weight:600; letter-spacing:1px; font-size:15px; margin-bottom:18px;">
+<!-- HERO SECTION -->
+<div class="hero">
+  <p style="font-weight:600; letter-spacing:1px; font-size:15px;">
     FINANCIAL LITERACY 101
   </p>
 
-  <!-- Profile Image -->
-  <img src="financialliteracy101profilepicture.jpg"
-       alt="Tshepiso Masilela"
-       style="width:110px; height:110px; border-radius:50%; margin-bottom:10px;">
+  <img src="financialliteracy101profilepicture.jpg" alt="Tshepiso Masilela">
 
-  <!-- Name -->
-  <p style="font-weight:600; font-size:15px; margin-bottom:28px;">
+  <p style="font-weight:600; font-size:15px; margin-bottom:30px;">
     Tshepiso Masilela
   </p>
 
-  <!-- Headline -->
-  <h1 style="max-width:760px; margin:0 auto 20px; line-height:1.25;">
+  <h1>
     Legally Reduce Income Tax, Increase Cashflow Now —  
     While Still Investing in Your Retirement
   </h1>
 
-  <!-- Subheadline -->
-  <p style="max-width:720px; margin:0 auto 34px; font-size:18px; line-height:1.5;">
+  <p>
     Learn how high-income earners use smart retirement planning to legally reduce income tax,
     free up monthly cashflow today, and still build long-term wealth — without waiting until 65.
   </p>
 
-  <!-- CTA Button -->
-  <a href="#lead-form"
-     style="display:inline-block; background:#f4c430; color:#000; padding:16px 32px;
-            font-size:18px; font-weight:600; text-decoration:none; border-radius:10px;">
+  <a href="#lead-form" class="cta-btn">
     Book My Free Tax & Retirement Review
   </a>
-
 </div>
 
+<!-- VIDEO SECTION -->
+<div class="section" style="text-align:center;">
+  <h2>Watch This Short 1-Minute Video</h2>
 
-  <!-- Main Headline -->
-  <h1 style="max-width:600px;">
-    Legally Reduce Income Tax, Increase Cashflow Now —  
-    While Still Investing in Your Retirement
-  </h1>
-
-  <!-- Subheadline / Optional -->
-  <p style="max-width:600px;">
-    Find out how high-income earners like you can take advantage of smart retirement planning 
-    to lower taxes today and grow your future wealth.
-  </p>
-</div>
-
-Many high-earning professionals pay more tax than necessary —  
-without realising retirement planning can reduce tax <b>today</b>, not only at 65.
-</p>
-
-<a href="#form" class="cta">Book a Free Strategy Review</a>
-</div>
-
-<div style="padding:60px 25px; text-align:center; background:#ffffff;">
-
-  <h2 style="margin-bottom:14px;">
-    Watch This Short 1-Minute Video
-  </h2>
-
-  <p style="max-width:650px; margin:0 auto 30px; font-size:17px;">
-    In this quick explanation, I show how high-income earners can legally reduce income tax,
-    increase monthly cashflow, and still invest intentionally toward retirement — without
-    waiting until age 65.
+  <p style="max-width:650px; margin:0 auto 30px;">
+    I explain how retirement planning can be used as a tax-efficient tool to increase cashflow
+    today — while still building your future.
   </p>
 
-  <div style="max-width:720px; margin:0 auto;">
-    <video controls style="width:100%; border-radius:14px;">
-      <source src="tax-retirement-explainer.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <div class="video-wrap">
+    <iframe 
+      src="https://www.youtube.com/embed/Cs6enBo6dLg"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
-
 </div>
 
+<!-- BENEFITS SECTION -->
+<div class="section">
+  <div class="benefits">
+    <h2>Why This Strategy Works for High-Income Earners</h2>
+    <ul>
+      <li>Reduce taxable income legally using approved retirement structures</li>
+      <li>Increase monthly cashflow without sacrificing your future</li>
+      <li>Stop overpaying SARS while building long-term wealth</li>
+      <li>Use retirement planning as a living financial tool — not locked-away money</li>
+      <li>Clear, intentional strategy instead of guesswork</li>
+    </ul>
 
-<div class="benefits">
-<h2>Why This Strategy Works for High-Income Earners</h2>
-<ul>
-<li>✔ Reduce taxable income legally using approved retirement structures</li>
-<li>✔ Increase monthly cashflow without sacrificing your future</li>
-<li>✔ Stop overpaying SARS while building long-term wealth</li>
-<li>✔ Use retirement planning as a living financial tool — not a locked-away fund</li>
-<li>✔ Get clarity, structure, and intentional strategy instead of guesswork</li>
-</ul>
-
-<h2>Why Work With a Professional — Not a One-Time Sale</h2>
-<ul>
-<li>✔ Ongoing annual reviews and continuous optimisation</li>
-<li>✔ Advice tailored to you as an individual — not generic products</li>
-<li>✔ Long-term partnership focused on education and financial literacy</li>
-<li>✔ Proactive monitoring as your income, tax, and goals change</li>
-</ul>
+    <h2>Why Work With a Professional — Not a One-Time Sale</h2>
+    <ul>
+      <li>Ongoing annual reviews and continuous optimisation</li>
+      <li>Advice tailored to you as an individual</li>
+      <li>Education-focused journey toward financial literacy</li>
+      <li>Proactive monitoring as your income and goals change</li>
+    </ul>
+  </div>
 </div>
 
-<form id="form" action="thankyou.html">
-<h2>Free Retirement & Tax Strategy Review</h2>
+<!-- LEAD FORM -->
+<div class="section" id="lead-form">
+  <form action="thankyou.html">
+    <h2>Free Tax & Retirement Strategy Review</h2>
 
-<label>Which best describes your current focus?</label>
-<select required>
-<option value="">Select one</option>
-<option>Reducing tax and increasing cashflow</option>
-<option>Building long-term wealth and retirement</option>
-<option>Both tax efficiency and retirement planning</option>
-</select>
+    <label>What best describes your current focus?</label>
+    <select required>
+      <option value="">Select one</option>
+      <option>Reducing tax & increasing cashflow</option>
+      <option>Building retirement wealth</option>
+      <option>Both tax efficiency & retirement</option>
+    </select>
 
-<label>How much income tax do you estimate you pay per year?</label>
-<select required>
-<option value="">Select one</option>
-<option>Less than R100,000</option>
-<option>R100,000 – R250,000</option>
-<option>R250,000 – R500,000</option>
-<option>More than R500,000</option>
-</select>
+    <label>Estimated income tax paid per year?</label>
+    <select required>
+      <option value="">Select one</option>
+      <option>Below R100,000</option>
+      <option>R100,000 – R250,000</option>
+      <option>R250,000 – R500,000</option>
+      <option>R500,000+</option>
+    </select>
 
-<label>Are you actively looking for professional guidance to optimise your finances?</label>
-<select required>
-<option value="">Select one</option>
-<option>Yes, I want expert guidance</option>
-<option>I’m exploring options</option>
-<option>I know I need help but haven’t acted yet</option>
-</select>
+    <label>Are you actively seeking professional guidance?</label>
+    <select required>
+      <option value="">Select one</option>
+      <option>Yes, I want expert help</option>
+      <option>I’m exploring options</option>
+      <option>I know I need help but haven’t acted</option>
+    </select>
 
-<label>How committed are you to improving your financial position?</label>
-<select required>
-<option value="">Select one</option>
-<option>Ready to take action now</option>
-<option>Serious but need guidance</option>
-<option>Learning and planning next steps</option>
-</select>
+    <label>How committed are you to improving your finances?</label>
+    <select required>
+      <option value="">Select one</option>
+      <option>Ready to take action</option>
+      <option>Serious but need guidance</option>
+      <option>Learning and planning</option>
+    </select>
 
-<label>Your Name</label>
-<input type="text" required>
+    <label>Your Name</label>
+    <input type="text" required>
 
-<label>WhatsApp Number</label>
-<input type="tel" required>
+    <label>WhatsApp Number</label>
+    <input type="tel" required>
 
-<p>
-<input type="checkbox" required>  
-I consent to being contacted via WhatsApp regarding my financial review.
-</p>
+    <p>
+      <input type="checkbox" required>
+      I consent to being contacted via WhatsApp regarding my financial review.
+    </p>
 
-<button type="submit">Book My Free Review</button>
-</form>
+    <button type="submit">Book My Free Review</button>
+  </form>
+</div>
 
+<!-- FOOTER -->
 <div class="footer">
-<p>
-This consultation is educational and not a product sale.  
-Advice is tailored after understanding your personal financial situation.
-</p>
-</div>
-
+  <p>
+    This session is educational and not a product sale.  
+    Advice is personalised after understanding your full financial situation.
+  </p>
 </div>
 
 </body>
