@@ -2,67 +2,102 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Thank You – Booking Confirmed</title>
+<title>Thank You | Financial Literacy 101</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Meta Pixel Lead Event -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1070686295200728');
-fbq('track', 'Lead');
-</script>
 
 <style>
 body {
   font-family: Arial, sans-serif;
-  background:#f4f6fb;
-  margin:0;
+  margin: 0;
+  background: #f4f6fb;
+  color: #1f2937;
 }
 
 .container {
-  max-width:700px;
-  margin:80px auto;
-  padding:40px;
-  background:white;
-  border-radius:12px;
-  text-align:center;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-h1 {
-  color:#0b3c5d;
+.hero {
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 60px 25px;
+  border-radius: 12px;
 }
 
-p {
-  font-size:17px;
-  line-height:1.6;
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+}
+
+.cta {
+  background: #f4c430;
+  color: #000;
+  padding: 14px 28px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.footer {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 40px;
 }
 </style>
+
+<!-- Meta Pixel Code (Base + Conversion) -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1070686295200728');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');  // This is the conversion event
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1070686295200728&ev=PageView&noscript=1"
+/></noscript>
+
 </head>
 
 <body>
 
 <div class="container">
-  <h1>Thank You — You’re Booked</h1>
+  <div class="hero">
+    <h1>Thank You!</h1>
+    <p style="max-width:760px; margin:0 auto 20px; line-height:1.5;">
+      Your request has been received. I’m reviewing your details and will contact you shortly on WhatsApp.
+    </p>
 
-  <p>
-    Your details have been successfully submitted.
-  </p>
+    <p style="max-width:760px; margin:0 auto 20px; line-height:1.5;">
+      If you’d like to speak to me immediately, click the button below.
+    </p>
 
-  <p>
-    I’ll personally review your information and contact you via WhatsApp
-    to schedule your free tax & retirement strategy session.
-  </p>
+    <a href="https://wa.me/27766075662" class="cta">
+      Message Me on WhatsApp
+    </a>
+  </div>
 
-  <p>
-    Please keep an eye on your messages.
-  </p>
+  <div class="footer">
+    <p>
+      If you don’t receive a WhatsApp message within 24 hours, please check your spam folder or send a WhatsApp message directly.
+    </p>
+  </div>
 </div>
 
 </body>
