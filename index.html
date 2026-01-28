@@ -22,7 +22,6 @@
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1070686295200728&ev=PageView&noscript=1"/>
   </noscript>
-  <!-- END META PIXEL -->
 
   <style>
     body {
@@ -44,6 +43,13 @@
       color: white;
       padding: 60px 25px;
       border-radius: 16px;
+    }
+
+    .hero img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin: 15px 0;
     }
 
     .hero h1 {
@@ -150,6 +156,9 @@
   <div class="hero">
     <p style="letter-spacing:1px; font-weight:600;">FINANCIAL LITERACY 101</p>
 
+    <!-- PROFILE IMAGE RESTORED -->
+    <img src="financialliteracy101profilepicture.jpg" alt="Tshepiso Masilela">
+
     <h1>
       Get More of Your Income Tax Back Into <br>
       <strong>Your Pocket — Not SARS’</strong>
@@ -177,15 +186,18 @@
       allowfullscreen></iframe>
   </div>
 
-  <!-- EDUCATION -->
+  <!-- BENEFITS (EXPANDED, NOT REPLACED) -->
   <div class="benefits">
     <h2>You Don’t Have to Wait Until 65</h2>
     <ul>
-      <li>Reduce taxable income legally</li>
-      <li>Increase monthly cashflow now</li>
-      <li>Structure retirement contributions correctly</li>
-      <li>Avoid common SARS-costing mistakes</li>
-      <li>Align short-term relief with long-term wealth</li>
+      <li>Reduce taxable income legally using SARS-approved structures</li>
+      <li>Increase monthly cashflow without compromising your future</li>
+      <li>Structure retirement contributions correctly from day one</li>
+      <li>Avoid common tax mistakes that cost high earners thousands</li>
+      <li>Align short-term relief with long-term wealth creation</li>
+      <li><strong>Work with a professional who walks the journey with you</strong></li>
+      <li>Get personalised guidance — not generic advice or products</li>
+      <li>Know exactly what to change, what to keep, and why it matters</li>
     </ul>
   </div>
 
@@ -197,18 +209,14 @@
       for an educational tax & retirement review.
     </div>
 
-    <!-- GOOGLE FORM EMBED -->
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLScls806vtjV6jp76c8djMg78e1SaZ_0eUzw0dtwyA2xm4jwAg/viewform?embedded=true"
       width="100%"
       height="1727"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0">
+      frameborder="0">
       Loading…
     </iframe>
 
-    <!-- WHATSAPP FAST ACTION -->
     <a class="whatsapp-btn"
        href="https://wa.me/27666075662"
        target="_blank">
@@ -223,11 +231,9 @@
   This consultation is educational and not a product sale.
 </footer>
 
-<!-- LEAD EVENT TRACKING -->
 <script>
 let leadFired = false;
-
-window.addEventListener("message", function(event) {
+window.addEventListener("message", function() {
   if (!leadFired) {
     fbq('track', 'Lead');
     leadFired = true;
